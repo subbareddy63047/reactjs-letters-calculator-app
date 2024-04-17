@@ -1,0 +1,110 @@
+/* Write your code here. */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+}
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 90%;
+}
+.image {
+  width: 80%;
+  height: 50%;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 40%;
+  justify-content: space-around;
+}
+.heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  text-align-last: center;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  min-height: 23%;
+}
+label {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 10px;
+}
+#input {
+  width: 90%;
+  height: 70%;
+  border: 1px solid white;
+  background-color: transparent;
+  font-size: 20px;
+  outline: none;
+  color: white;
+  padding: 2%;
+  font-weight: bold;
+}
+.letters-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  height: 20%;
+  align-self: start;
+}
+.letters {
+  color: #1d976c;
+  margin: auto;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .inner-container {
+    width: 90%;
+    height: 40%;
+    flex-direction: row;
+  }
+  .image {
+    width: 40%;
+    height: 90%;
+    order: 1;
+  }
+  .content-container {
+    width: 45%;
+    height: 80%;
+
+    align-items: flex-start;
+  }
+  .heading {
+    font-size: 35px;
+    text-align: start;
+    text-align-last: start;
+  }
+  label {
+    font-size: 20px;
+  }
+  .letters {
+    font-size: 150%;
+  }
+}
